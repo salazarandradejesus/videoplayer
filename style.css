@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+
+.logo {
+	width: 200px;
+}
+
+header .logo {
+	position: relative;
+	max-width: 200px;
+}
+header ul {
+	position: relative;
+	display: flex;
+}
+
+
+
+header ul li {
+	list-style: none;
+}
+
+
+header ul li a {
+	display: inline-block;
+	color: #333;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	color: rgb(36, 36, 36);
+	font-weight: 700;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox {
+	position: relative;
+	max-width: 600px;
+}
+
+.content .textBox h2 {
+	color: #333;
+	font-size: 4rem;
+}
+
+.content .textBox h2 span {
+	color: #c2d500;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+.content .textBox p {
+	color: #333;
+}
+
+
+.content .textBox a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #c2d500;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.content .textBox a:hover{
+	color: #333;
+	font-weight: bold;
+}
+
+.content .imgBox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+
+.content .imgBox img {
+	max-width: 340px;
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #abcc04;
+	clip-path: circle(600px at right 700px);
+}
+@media (max-width: 991px) 
+{    
+    header {
+        padding: 20px;
+    }
+    header .logo {
+        max-width: 150px;
+    }
+    
+    header ul {
+        display: none;
+    }
+
+	.toggle {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		background: url(/images/menu.png);
+		background-size: 30px;
+		background-position:center;
+		background-repeat: no-repeat;
+		filter: invert();
+		z-index: 11;
+	}
+
+	.toggle.active {
+		background: url(/images/close.png);
+		background-size: 30px;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+
+	header ul.navigation.active{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background:rgba(243, 243, 243, 0.95);
+		z-index: 10;
+	}
+
+    section {
+        padding: 20px;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2 {
+        font-size: 2.5em;
+		margin-bottom: 15px;
+    }
+	.content .textBox {
+		max-width: 100%;
+	}
+
+	.content .imgBox{
+		max-width: 100%;
+	}
+
+	.content .imgBox img {
+		max-width: 300px;
+	}
+
+	.circle {
+		clip-path: circle(400px at center bottom);
+	}
+
+}
+
+/* Video Dashboard Starts Here */
+ #videoDashboard__section{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+ }
+
+ section main h1 {
+	 color: #333;
+
+ }
+
+ section main h1 span {
+	color: #c2d500;
+	font-weight: 800;
+	font-size: 2rem;
+
+}
+
+.flex-div {
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	padding: 20px 20px;
+	justify-content: space-between;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+nav .menu-icon {
+	margin-right: 50px;
+	padding-bottom: 15px;
+	width: 25px;
+}
+
+
+
+.nav-right li {
+	width: 25px;
+	margin-right: 30px;
+	display: inline;
+	
+}
+
+.nav-right li a{
+	text-decoration: none;
+	color: #333;
+}
+
+.nav-right li a:hover{
+	font-weight: bold;
+}
+
+.nav-middle .search-box {
+	border: 1px solid #ccc;
+	padding: 8px 12px;
+	border-radius: 25px;
+}
+
+.nav-middle .search-box input {
+	width: 200px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+.nav-middle .search-box i {
+	width: 15px;
+	color: #ccc;
+}
+
+/* Left Sidebar Here */ 
+.sidebar {
+	background: rgb(255, 255, 255);
+	width: 17%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	padding-left: 25px;
+	padding-top: 150px;
+
+}
+
+
+.sidebar .shortcut-links a img {
+	width: 20px;
+	margin-right: 10px;
+
+}
+
+.sidebar .shortcut-links a {
+	text-decoration: none;
+	color: #333;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	width: fit-content;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: .9em;
+}
+
+.sidebar .shortcut-links a:first-child{
+	color: #abcc04;
+}
+
+.sidebar .shortcut-links a i {
+	margin-right:20px;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5em;
+	width: 20px;
+}
+
+.small-sidebar {
+	width: 5%;
+}
+
+.small-sidebar a p{
+	display: none;
+}
+
+
+/* Main content Here*/
+
+.container {
+	padding-left: 17%;
+	padding-right: 2%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.large-container{
+	padding-left: 7%;
+}
+
+
+.banner {
+	width: 100%;
+	height: 100%;
+
+	
+}
+
+.banner img {
+	width: 100%;
+	border-radius: 8px;
+
+}
+
+/* numerous videos Here*/
+
+.list-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-column-gap: 16px;
+	grid-row-gap: 30px;
+	margin-top: 15px;
+}
+
+
+.vid-list .thumbnail {
+	width: 100%;
+	border-radius: 5px;
+	
+}
+
+.vid-list .flex-div {
+	align-items: flex-start;
+	margin-top: 7px;
+}
+
+
+.vid-info a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+.vid-info a:hover{
+	color: #abcc04;
+}
+
+.vid-info p{
+	font-size: .8rem;
+	color: #8b8b8b;
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* media Queries Here */ 
+
+@media (max-width: 900px) {
+	.menu-icon {
+		display: none;
+	}
+	.sidebar {
+		display: none;
+	}
+
+	.container, .large-container {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.nav-right li{
+		font-size: .7em;
+		
+	}
+
+	.nav-middle .search-box input{
+		width: 50px;
+
+	}
+	.logo {
+		width: 90px;
+	}
+
+}
+
+/* Video player Here*/
+
+.play-container {
+	padding-left: 2%;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.play-video {
+	flex-basis: 69%;
+}
+
+.right-sidebar {
+	flex-basis: 30%;
+}
+
+.iframe-container {
+	position: relative;
+	width: 60%;
+
+}
+
+.iframe-container iframe {
+	width: 100%;
+}
+
