@@ -143,7 +143,7 @@ header ul li a:hover{
         display: none;
     }
 
-	.toggle {
+	.toggle.active {
 		position: relative;
 		width: 30px;
 		height: 30px;
@@ -156,7 +156,7 @@ header ul li a:hover{
 		z-index: 11;
 	}
 
-	.toggle.active {
+	.toggle {
 		background: url(/images/close.png);
 		background-size: 30px;
 		background-position:center;
